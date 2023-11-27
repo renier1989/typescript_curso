@@ -1,4 +1,4 @@
-// esto es una funcion auto invocada, para evitar choque con las definiciones de variables globales de otros archivos
+// esto es una funcion anonima auto-invocada, para evitar choque con las definiciones de variables globales de otros archivos
 (() => {
   const nombre: string = "Renier Vargas";
   console.log(nombre);
