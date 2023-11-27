@@ -1,5 +1,5 @@
 (()=>{
-    const fullName = (firstName:string , lastName:string) =>{
+    const fullName = (firstName:string , lastName:string):string =>{
         return `${firstName} ${lastName}`
     }
     // indica que la funcion fullName espera 2 argumentos y que sean del tipo esperado string
