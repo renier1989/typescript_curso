@@ -6,5 +6,6 @@
     numeros.push(8);
     console.log(numeros);
     const losMalos = ['enemigo1', 'enemigo2', 'enemigo3'];
+    // dentro del cilco TS ya sabe que las iteraciones sera tipo string
     losMalos.forEach(m => (console.log(m.toUpperCase())));
 })();
