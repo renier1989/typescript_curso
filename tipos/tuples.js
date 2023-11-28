@@ -10,3 +10,4 @@
     //   superheroes[1] = 'algo';
     superheroes.forEach((info) => console.log(info));
 })();
+//# sourceMappingURL=tuples.js.map

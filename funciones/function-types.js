@@ -25,3 +25,4 @@
     console.log(myFunction());
     console.log(typeof (myFunction));
 })();
+//# sourceMappingURL=function-types.js.map

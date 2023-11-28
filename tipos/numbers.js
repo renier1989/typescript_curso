@@ -13,3 +13,4 @@
     losBuenos = Number('33dd');
     console.log(losBuenos); // -> NaN esto es considerado como un numero
 })();
+//# sourceMappingURL=numbers.js.map

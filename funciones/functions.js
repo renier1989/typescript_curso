@@ -17,3 +17,4 @@
     console.log(typeof heroeActivo);
     console.log(typeof heroeActivo2);
 })();
+//# sourceMappingURL=functions.js.map

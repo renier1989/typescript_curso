@@ -7,3 +7,4 @@
     const name = fullName('Renier', 'Vargas');
     console.log({ name });
 })();
+//# sourceMappingURL=arg_required.js.map

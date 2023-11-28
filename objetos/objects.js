@@ -25,3 +25,4 @@
         poderes: ['Rayos de la fuerza', 'Controla la republica']
     };
 })();
+//# sourceMappingURL=objects.js.map

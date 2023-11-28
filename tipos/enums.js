@@ -10,3 +10,4 @@
     const audioActual = NivelAudio.potente;
     console.log(audioActual);
 })();
+//# sourceMappingURL=enums.js.map

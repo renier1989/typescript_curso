@@ -6,3 +6,4 @@
     isTimeToLunch = (isTimeToGo) ? true : false;
     console.log({ isTimeToLunch });
 })();
+//# sourceMappingURL=booleans.js.map

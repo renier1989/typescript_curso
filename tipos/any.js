@@ -16,3 +16,4 @@
     console.log(existe);
     console.log(poderes);
 })();
+//# sourceMappingURL=any.js.map

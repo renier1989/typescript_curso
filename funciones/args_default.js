@@ -13,3 +13,4 @@
     const name = fullName('Renier', 'vargas', true);
     console.log({ name });
 })();
+//# sourceMappingURL=args_default.js.map

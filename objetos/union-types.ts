@@ -21,6 +21,4 @@
         poderes : []
     }
     console.log({miVariablePersonalizada}, typeof(miVariablePersonalizada));
-    
-
 })()

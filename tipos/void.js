@@ -21,3 +21,4 @@
     console.log(algomas);
     vacio();
 })();
+//# sourceMappingURL=void.js.map
