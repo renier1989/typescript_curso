@@ -19,5 +19,13 @@
         }
     }
 
+    // la primera declaracion es la que se hace la deficion de los tipos internos del objeto
+    let superVillano: {nombre:string, alias?:string, edad:number , poderes: string[] , getNombre?:()=>string} = {
+        nombre : 'Carciller Palpatine',
+        alias : 'Lord Sidiuos',
+        edad : 80,
+        poderes : ['Rayos de la fuerza','Controla la republica']
+    }
+
 
 })()
