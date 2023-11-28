@@ -10,8 +10,11 @@
     // esta reasignacion de valores debe seguir la primera definicion de tipos que se hizo en primer lugar
     superHeroe = {
         nombre: 'Clark Kent',
-        alias: 'Superman',
+        // alias : 'Superman',
         edad: 33,
-        poderes: ['Vision RayosX', 'Super Fuerza']
+        poderes: ['Vision RayosX', 'Super Fuerza'],
+        // getNombre : ()=>{
+        //     return this.name
+        // }
     };
 })();

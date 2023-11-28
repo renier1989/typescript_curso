@@ -1,7 +1,7 @@
 (()=>{
 
     // la primera declaracion es la que se hace la deficion de los tipos internos del objeto
-    let superHeroe = {
+    let superHeroe: {nombre:string, alias?:string, edad:number , poderes: string[]} = {
         nombre : 'Bruce Wayne',
         alias : 'Batman',
         edad : 30,
@@ -11,9 +11,12 @@
     // esta reasignacion de valores debe seguir la primera definicion de tipos que se hizo en primer lugar
     superHeroe = {
         nombre: 'Clark Kent',
-        alias : 'Superman',
+        // alias : 'Superman',
         edad: 33,
-        poderes: ['Vision RayosX', 'Super Fuerza']
+        poderes: ['Vision RayosX', 'Super Fuerza'],
+        // getNombre : ()=>{
+        //     return this.name
+        // }
     }
 
 
