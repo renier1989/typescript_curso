@@ -1,3 +1,6 @@
+(()=>{
+
+  
 type Carro = {
   carroceria : string,
   modelo : string,
@@ -72,3 +75,6 @@ mystique = apocalipsis;
 
 console.log('algo pasa aqui');
 
+
+
+})()
