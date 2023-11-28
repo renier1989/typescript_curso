@@ -1,5 +1,4 @@
 "use strict";
-// Funciones Básicas
 function sumar(a, b) {
     return a + b;
 }
@@ -11,20 +10,16 @@ const contar = (heroes) => {
 };
 const superHeroes = ["Flash", "Arrow", "Superman", "Linterna Verde"];
 contar(superHeroes);
-//Parametros por defecto
 const llamarBatman = (llamar = 'sin señal') => {
     if (llamar) {
         console.log("Batiseñal activada");
     }
 };
 llamarBatman();
-// Rest?
 const unirheroes = (...personas) => {
     return personas.join(", ");
 };
-// Tipo funcion
 const noHaceNada = (numero, texto, booleano, arreglo) => { };
-// Crear el tipo de funcion que acepte la funcion "noHaceNada"
 let noHaceNadaTampoco;
 noHaceNadaTampoco = noHaceNada;
 //# sourceMappingURL=app.js.map

@@ -1,5 +1,4 @@
 "use strict";
-// esto es una funcion anonima auto-invocada, para evitar choque con las definiciones de variables globales de otros archivos
 (() => {
     const nombre = "Renier Vargas";
     console.log(nombre);
@@ -10,11 +9,4 @@
     }
     saludar('Venezuela');
 })();
-// const  msg = "hola mundo";
-// const hero = {
-//     name : 'superman',
-//     age: 34
-// }
-// hero.age = 50
-// console.log(hero.age + 1 );
 //# sourceMappingURL=app.js.map

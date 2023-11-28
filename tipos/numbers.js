@@ -11,6 +11,6 @@
         console.log('Ganamos la batalla');
     }
     losBuenos = Number('33dd');
-    console.log(losBuenos); // -> NaN esto es considerado como un numero
+    console.log(losBuenos);
 })();
 //# sourceMappingURL=numbers.js.map

@@ -1,13 +1,7 @@
 "use strict";
 (() => {
-    // el void es cuando una funcion no retorna nada
     function sinNada() {
     }
-    // // mal . porque esta retornando algo
-    // function sinNadaMas():void{
-    //     return true
-    // }
-    // bien  igual no retorna nada
     function sinNadaMas() {
         console.log('salio algo de aqui');
         return;

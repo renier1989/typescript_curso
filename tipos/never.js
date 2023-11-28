@@ -1,7 +1,5 @@
 "use strict";
 (() => {
-    // es cuando algo no va a funcionar o no retorna algo que se pueda usar
-    // por lo tanto la ejecucion termina
     let numero = 1;
     const estoPasa = (mensaje) => {
         if (numero == 2) {
@@ -20,7 +18,6 @@
         return true;
     };
     nuncaPasa("esto es un error , nunca pasa ");
-    //   ya la ejecucion no continuar ni llega hasta aqui
     const error = () => {
         throw new Error("ERROR");
     };
