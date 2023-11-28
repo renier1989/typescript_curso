@@ -13,8 +13,8 @@
         // alias : 'Superman',
         edad: 33,
         poderes: ['Vision RayosX', 'Super Fuerza'],
-        // getNombre : ()=>{
-        //     return this.name
-        // }
+        getNombre() {
+            return this.nombre;
+        }
     };
 })();

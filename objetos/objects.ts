@@ -1,7 +1,7 @@
 (()=>{
 
     // la primera declaracion es la que se hace la deficion de los tipos internos del objeto
-    let superHeroe: {nombre:string, alias?:string, edad:number , poderes: string[]} = {
+    let superHeroe: {nombre:string, alias?:string, edad:number , poderes: string[] , getNombre?:()=>string} = {
         nombre : 'Bruce Wayne',
         alias : 'Batman',
         edad : 30,
@@ -14,9 +14,9 @@
         // alias : 'Superman',
         edad: 33,
         poderes: ['Vision RayosX', 'Super Fuerza'],
-        // getNombre : ()=>{
-        //     return this.name
-        // }
+        getNombre(){
+            return this.nombre
+        }
     }
 
 
