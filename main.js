@@ -29,4 +29,23 @@ var __rest = (this && this.__rest) || function (s, e) {
     const [nombre, edad, peso,] = informacionArrglo;
     console.log({ edad, peso, nombre }, nombre.toUpperCase());
 })();
+(() => {
+    const manzana = {
+        nombre: 'Manzana',
+        color: 'Rojo'
+    };
+    const banana = {
+        nombre: 'Banana',
+        color: 'Amarrilla'
+    };
+    const sandia = {
+        nombre: 'Sandia',
+        color: 'Verde'
+    };
+    const ArregloFrutas = [banana, manzana, sandia, { nombre: 'papaya', color: 'amarilla' }];
+    for (const fruta of ArregloFrutas) {
+        const { nombre } = fruta;
+        console.log(nombre, '-', fruta.color);
+    }
+})();
 //# sourceMappingURL=main.js.map
