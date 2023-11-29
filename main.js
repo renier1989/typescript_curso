@@ -25,5 +25,8 @@ var __rest = (this && this.__rest) || function (s, e) {
         console.log(heroe1.toUpperCase(), resto);
     };
     printDatos(algunosDatos);
+    const informacionArrglo = ['Renier Vargas', 44, 23423.3, false];
+    const [nombre, edad, peso,] = informacionArrglo;
+    console.log({ edad, peso, nombre }, nombre.toUpperCase());
 })();
 //# sourceMappingURL=main.js.map
