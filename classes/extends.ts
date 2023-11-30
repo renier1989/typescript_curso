@@ -35,15 +35,15 @@
     }
   }
 
-  const Magneto = new Xmen("Magneto", "un Viejo", true);
-  console.log(Magneto);
+//   const Magneto = new Xmen("Magneto", "un Viejo", true);
+//   console.log(Magneto);
   //   Magneto.getFullNameFromXmen();
 
   // aqui accedo al get antes del set
-  console.log(Magneto.fullName);
+//   console.log(Magneto.fullName);
   // aqui accedo al set porque le asigno algo
-  Magneto.fullName = "Renier Vargas";
+//   Magneto.fullName = "Renier Vargas";
 
   // aqui accedo al get despues del set modificado
-  console.log(Magneto.fullName);
+//   console.log(Magneto.fullName);
 })();
