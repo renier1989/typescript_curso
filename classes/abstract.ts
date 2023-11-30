@@ -17,16 +17,16 @@
   const ciclope = new Bueno('Ciclope', 'Bueno');
   const magneto = new Malo('Magneto', 'Malo');
 
-  console.log(ciclope);
-  console.log(magneto);
+//   console.log(ciclope);
+//   console.log(magneto);
   
-  console.log(ciclope.salvar());
-  console.log(magneto.destruir());
+//   console.log(ciclope.salvar());
+//   console.log(magneto.destruir());
   
-  const printName = (personaje: Mutante) =>{
-    console.log(`${personaje.nombre}`);
-  }
+//   const printName = (personaje: Mutante) =>{
+//     console.log(`${personaje.nombre}`);
+//   }
 
-  printName(ciclope);
-  printName(magneto);
+//   printName(ciclope);
+//   printName(magneto);
 })();

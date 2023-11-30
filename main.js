@@ -18,15 +18,6 @@
     }
     const ciclope = new Bueno('Ciclope', 'Bueno');
     const magneto = new Malo('Magneto', 'Malo');
-    console.log(ciclope);
-    console.log(magneto);
-    console.log(ciclope.salvar());
-    console.log(magneto.destruir());
-    const printName = (personaje) => {
-        console.log(`${personaje.nombre}`);
-    };
-    printName(ciclope);
-    printName(magneto);
 })();
 (() => {
     class Personaje {
@@ -75,5 +66,29 @@
             console.log(super.getFullName());
         }
     }
+})();
+(() => {
+    class Starwars {
+        constructor(pelicula, nombre) {
+            this.pelicula = pelicula;
+            this.nombre = nombre;
+        }
+        static obtenerPelicula() {
+            if (!Starwars.instance) {
+                Starwars.instance = new Starwars('Episodio 3', 'La venganza de los sith');
+            }
+            return Starwars.instance;
+        }
+        cambiarPelicula(otraPelicula) {
+            this.pelicula = otraPelicula;
+        }
+    }
+    const pelicula = Starwars.obtenerPelicula();
+    const pelicula2 = Starwars.obtenerPelicula();
+    console.log(pelicula, pelicula2);
+    pelicula.cambiarPelicula('Harry Potter');
+    pelicula2.cambiarPelicula('Interstellar');
+    console.log(pelicula);
+    console.log(pelicula2);
 })();
 //# sourceMappingURL=main.js.map
