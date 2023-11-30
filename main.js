@@ -26,6 +26,15 @@
         getFullName() {
             return `${this.name} ${this.realName}`;
         }
+        get fullName() {
+            return `algo desde el get : ${this.name} ${this.realName}`;
+        }
+        set fullName(name) {
+            if (name.length < 3) {
+                throw new Error("El nombre es muy corto!!!");
+            }
+            this.name = name;
+        }
     }
     class Xmen extends Hero {
         constructor(name, realName, isMutant) {
@@ -35,11 +44,12 @@
         }
         getFullNameFromXmen() {
             console.log(super.getFullName());
-            console.log(super.getFullName());
         }
     }
-    const Magneto = new Xmen("Magneto", "Erick", true);
+    const Magneto = new Xmen("Magneto", "un Viejo", true);
     console.log(Magneto);
-    Magneto.getFullNameFromXmen();
+    console.log(Magneto.fullName);
+    Magneto.fullName = "Renier Vargas";
+    console.log(Magneto.fullName);
 })();
 //# sourceMappingURL=main.js.map
