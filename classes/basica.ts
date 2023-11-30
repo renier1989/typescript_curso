@@ -31,11 +31,11 @@
   }
 
   const antman: Personaje = new Personaje("AntMan", "Vengadores");
-  console.log(antman);
-  // las propiedades static se acceden haciendo la referencia a la clase directamente
-  console.log(Personaje.age);
+  // console.log(antman);
+  // // las propiedades static se acceden haciendo la referencia a la clase directamente
+  // console.log(Personaje.age);
 
-  console.log(antman.bio());
-  console.log(Personaje.getAvgAge());
+  // console.log(antman.bio());
+  // console.log(Personaje.getAvgAge());
   
 })();

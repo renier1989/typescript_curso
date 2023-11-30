@@ -15,9 +15,31 @@
     }
     Personaje.age = 33;
     const antman = new Personaje("AntMan", "Vengadores");
-    console.log(antman);
-    console.log(Personaje.age);
-    console.log(antman.bio());
-    console.log(Personaje.getAvgAge());
+})();
+(() => {
+    class Hero {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            console.log("esto es el contructor Hero");
+        }
+        getFullName() {
+            return `${this.name} ${this.realName}`;
+        }
+    }
+    class Xmen extends Hero {
+        constructor(name, realName, isMutant) {
+            super(name, realName);
+            this.isMutant = isMutant;
+            console.log("esto es el contructor Xmen");
+        }
+        getFullNameFromXmen() {
+            console.log(super.getFullName());
+            console.log(super.getFullName());
+        }
+    }
+    const Magneto = new Xmen("Magneto", "Erick", true);
+    console.log(Magneto);
+    Magneto.getFullNameFromXmen();
 })();
 //# sourceMappingURL=main.js.map
