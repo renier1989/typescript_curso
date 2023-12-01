@@ -1,3 +1,5 @@
+import poderes from "../data/poderes";
+
 
 export class Hero{
     constructor(
@@ -5,6 +7,10 @@ export class Hero{
         public powerId:number,
         public age:number,
     ){}
+
+    get poder():string{
+        return poderes.find( poder => poder.id === this.powerId)?.desc || 'No hay nada!'
+    }
 }
 
 export class Hero2 {}
