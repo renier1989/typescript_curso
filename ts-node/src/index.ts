@@ -1,6 +1,6 @@
 import { genericFuncitonNormal, genericFunction, genericFuntionArrow, printAlgo } from "./generics/generics";
-import { Heroe } from "./interfaces/heroe";
-import { Villano } from "./interfaces/villano";
+import { Heroe, Villano } from "./interfaces";
+
 
 
 // // funcion generica basica porque recibe cualquier tipo de valor any
