@@ -1,4 +1,6 @@
-import { genericFuncitonNormal, genericFunction, printAlgo } from "./generics/generics";
+import { genericFuncitonNormal, genericFunction, genericFuntionArrow, printAlgo } from "./generics/generics";
+import { Heroe } from "./interfaces/heroe";
+import { Villano } from "./interfaces/villano";
 
 
 // // funcion generica basica porque recibe cualquier tipo de valor any
@@ -16,11 +18,20 @@ import { genericFuncitonNormal, genericFunction, printAlgo } from "./generics/ge
 // console.log( genericFuncitonNormal(3.1434234234).toFixed(2) );
 
 
-// ejemplo de funcion genericas
-const name:string = 'Renier Vargas'; 
-const someNumber:number = 234.2343424;
+// // ejemplo de funcion genericas
+// const name:string = 'Renier Vargas'; 
+// const someNumber:number = 234.2343424;
 
-console.log( genericFunction(name).toUpperCase() ); 
-console.log( genericFunction(new Date()).getFullYear() ); 
-console.log( genericFunction(someNumber).toFixed(2) ); 
+// console.log( genericFunction(name).toUpperCase() ); 
+// console.log( genericFunction(new Date()).getFullYear() ); 
+// console.log( genericFunction(someNumber).toFixed(2) ); 
+
+const deadpool = {
+    name: "Deadpool", // en la interface de Heroe y Villano
+    realName: "Wade Winston Wilson", // en la interface de Heroe
+    nivelPeligro: 100, // en la interface de Villano
+}
+
+console.log( genericFuntionArrow<Heroe>(deadpool).realName );
+console.log( genericFuntionArrow<Villano>(deadpool).nivelPeligro );
 
