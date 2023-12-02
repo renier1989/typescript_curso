@@ -11,3 +11,8 @@ return argument;
 export function genericFunction<T>(argument:T){
     return argument;
 }
+
+// declaracion de arrow functions genericas
+export const genericFuntionArrow = <T>(argument:T)=>{
+    return argument
+}
