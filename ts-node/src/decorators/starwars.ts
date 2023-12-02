@@ -10,7 +10,15 @@ const printContructorInScreen = (print: boolean = false): Function => {
   return () => console.log("hola desde un decorador arrow function");
 };
 
+const bloquearPrototipo = function(constructor: Function){
+    Object.seal(constructor)
+    Object.seal(constructor.prototype)
+}
+
+// los decoradores se van ejecutando en order de decalracion
+
 // @printLogScreen
+@bloquearPrototipo
 @printContructorInScreen()
 export class PersonajeStarwars {
   public autor: string = "George Lucas";
