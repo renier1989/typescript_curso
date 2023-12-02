@@ -1,15 +1,18 @@
-function printLogScreen(constructor: Function){
-    console.log(constructor);
+function printLogScreen(constructor: Function) {
+  console.log(constructor);
 }
 
-@printLogScreen
-export class PersonajeStarwars{
+// se le pueden pasar parametros a un decorador.
+const printContructorInScreen = (print: boolean = false): Function => {
+  if (print) {
+    return printLogScreen;
+  }
+  return () => console.log("hola desde un decorador arrow function");
+};
 
-    public autor:string = "George Lucas";
-
-    constructor(
-        public nombre: string
-    ){
-
-    }
+// @printLogScreen
+@printContructorInScreen()
+export class PersonajeStarwars {
+  public autor: string = "George Lucas";
+  constructor(public nombre: string) {}
 }
